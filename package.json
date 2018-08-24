@@ -1,0 +1,11 @@
+{
+  "name": "library-app",
+  "version": "1.0.0",
+  "description": "Node Library Application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "testIt"
+  },
+  "author": "Ikram Hasib",
+  "license": "MIT"
+}
