@@ -1,0 +1,29 @@
+{{> head}}
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Book Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Status</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each books}}
+          <tr>
+            <td>{{title}}</td>
+            <td>{{author}}</td>
+            <td><span class="badge badge-success">{{status}}</span></td>
+            <td><a href="/book/borrow/{{_id}}">Borrow</a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+
+{{> footer}}

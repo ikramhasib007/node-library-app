@@ -1,0 +1,23 @@
+{{> head}}
+
+<div class="card" style="flex-direction: row;">
+    <img src="https://via.placeholder.com/350x250" alt="Card image cap">
+    <div class="card-body">
+        <div class="card-heading">
+            <h4 class="card-title">{{book.title}}</h4>
+            <span class="badge badge-success">{{book.status}}</span>
+        </div>
+        <h6 class="card-subtitle mb-2 text-muted">{{book.author}}</h6>
+        <p class="card-text">{{book.about_author}}</p>
+    </div>
+    <div class="card-right-block">
+        <h6>Fees: {{book.fee}} BDT.</h6>
+        <h6>Delivery Charges: {{book.delivery_charges}} BDT.</h6>
+        <form action="/book/cart" method="POST">
+            <input type="hidden" name="id" value="{{book._id}}">
+            <button role="button" class="btn btn-outline-secondary btn-block" type="submit">Borrow Now</button>
+        </form>
+    </div>
+</div>
+
+{{> footer}}

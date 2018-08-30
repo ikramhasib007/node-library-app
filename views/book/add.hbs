@@ -1,0 +1,28 @@
+{{> head}}
+<div class="row">
+    <div class="col-md-6">
+        <form action="/book/save" method="POST">
+            <div class="form-group">
+                <label for="title">Book Title</label>
+                <input type="text" class="form-control" name="title" id="title" aria-describedby="bookTitle" placeholder="Book Title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" name="author" placeholder="Author">
+            </div>
+            <div class="form-group">
+                <label for="author">About Authors</label>
+                <textarea class="form-control" rows="6" id="about_author" name="about_author" placeholder="About Authors">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus, velit eget lobortis congue, dolor lorem congue justo, vel venenatis massa nibh quis ipsum. Aenean faucibus a sem quis finibus. Proin eu ullamcorper enim. Donec vitae erat quis lectus dictum condimentum. Curabitur nec ligula dolor. Vestibulum pretium justo at lacus viverra tristique. Nam eleifend enim consectetur posuere sodales.</textarea>
+            </div>
+            <div class="form-group">
+                <label for="author">Borrow Fee</label>
+                <input type="number" class="form-control" id="fee" name="fee" placeholder="Borrow Fee" min="1">
+            </div>
+            <button type="submit" class="btn btn-block btn-primary">Save</button>
+        </form>
+    </div>
+
+</div>
+
+
+{{> footer}}
