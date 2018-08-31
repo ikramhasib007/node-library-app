@@ -5,10 +5,6 @@ socket.on('connect', function() {
 
 });
 
-socket.on('outOfStock', function(book) {
-    console.log('outOfStock', book);
-});
-
 if(jQuery('.table').length !== 0) {
     socket.on('bookList', function(books) {
         if(!books || !books.length) {
