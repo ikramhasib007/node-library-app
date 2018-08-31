@@ -14,6 +14,7 @@ node -v
 - Run the command on your prompt
 ```
 npm install
+npm start
 ```
 
 Then hit `http://localhost:3000` on your browser.
